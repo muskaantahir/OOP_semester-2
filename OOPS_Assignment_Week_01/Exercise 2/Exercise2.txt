@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+
+        //Instantiation: Creating a Car object in the Heap and assigning its reference to bmw in the Stack.
+        Car bmw = new Car();
+
+        //Instantiation: Creating a Car object in the Heap and assigning its reference to tesla in the Stack.
+        Car tesla = new Car();
+
+        // Null construction: Creating a Car reference with no object assigned
+        Car anotherCar = null;
+
+        //Setting values of the first object
+        bmw.setDetails("BMW", "Black");
+
+        //Setting values of the second object
+        tesla.setDetails("Tesla", "Red");
+
+        // Calling methods
+        bmw.startEngine();
+        tesla.startEngine();
+
+        bmw.displayState();
+        tesla.displayState();
+
+        bmw.stopEngine();
+
+        bmw.displayState();
+    }
+}
